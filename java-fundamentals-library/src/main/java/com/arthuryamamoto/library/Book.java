@@ -8,7 +8,6 @@ public class Book {
     private int year;
     private boolean available;
 
-    
     public Book(int id, String title, String author, int year, boolean available) {
         this.id = id;
         this.title = title;
@@ -16,6 +15,8 @@ public class Book {
         this.year = year;
         this.available = available;
     }
+    
+    
     public int getId() {
         return id;
     }
@@ -46,6 +47,8 @@ public class Book {
     public void setAvailable(boolean available) {
         this.available = available;
     }
+    
+    
     
     @Override
     public String toString() {
