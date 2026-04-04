@@ -17,6 +17,18 @@ public static void main(String[] args) {
     
     do{
         int option = menu.getOption();
+        
+        switch (option) {
+            case 1:
+                break;
+            case 6:
+                stop = true;
+                System.out.println("Finishing....");
+                break;
+        
+            default:
+                break;
+        }
     }while(!stop);
 
     }
