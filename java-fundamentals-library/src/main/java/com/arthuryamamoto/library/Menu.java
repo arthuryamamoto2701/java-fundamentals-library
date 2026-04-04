@@ -23,4 +23,24 @@ public class Menu {
 
         return option;
     }
+
+    public Book addBook(int id) {
+    System.out.println("Enter book title: ");
+    String title = scanner.nextLine();
+
+    System.out.println("Enter author name: ");
+    String author = scanner.nextLine();
+
+    System.out.println("Enter publication year: ");
+    int year = scanner.nextInt();
+    scanner.nextLine();
+
+    Book book = new Book(id, title, author, year);
+
+    System.out.println();
+    System.out.println("Book added successfully!");
+
+    return book;
 }
+        
+    }

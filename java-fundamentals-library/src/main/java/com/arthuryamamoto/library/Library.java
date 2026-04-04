@@ -14,12 +14,15 @@ public static void main(String[] args) {
 
     Menu menu = new Menu();
     boolean stop = false;
-    
+    int id_book = 1;
+
     do{
         int option = menu.getOption();
         
         switch (option) {
             case 1:
+                books.add(menu.addBook(id_book));
+                id_book++;
                 break;
             case 6:
                 stop = true;
