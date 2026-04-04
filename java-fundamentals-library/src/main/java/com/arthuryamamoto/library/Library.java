@@ -24,6 +24,8 @@ public static void main(String[] args) {
                 books.add(menu.addBook(id_book));
                 id_book++;
                 break;
+            case 2:
+                menu.listBooks(books);
             case 6:
                 stop = true;
                 System.out.println("Finishing....");

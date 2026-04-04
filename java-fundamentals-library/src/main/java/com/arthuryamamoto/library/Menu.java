@@ -1,5 +1,6 @@
 package com.arthuryamamoto.library;
 
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Menu {
@@ -41,6 +42,24 @@ public class Menu {
     System.out.println("Book added successfully!");
 
     return book;
+}
+
+    public void listBooks(ArrayList<Book> books) {
+    if (books.isEmpty()) {
+        System.out.println();
+        System.out.println("No books registered!");
+        System.out.println();
+        return;
+    }
+
+    System.out.println();
+    System.out.println("List of books:");
+    
+    for (int i = 0; i < books.size(); i++) {
+        System.out.println(books.get(i));
+    }
+    
+    System.out.println();
 }
         
     }
