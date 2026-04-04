@@ -12,11 +12,12 @@ public static void main(String[] args) {
 
     ArrayList<Book> books = new ArrayList<>();
 
+    Menu menu = new Menu();
     boolean stop = false;
+    
     do{
-
-    }
-    while(!stop);
+        int option = menu.getOption();
+    }while(!stop);
 
     }
 }
