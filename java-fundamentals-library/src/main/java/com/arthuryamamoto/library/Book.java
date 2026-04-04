@@ -2,12 +2,11 @@ package com.arthuryamamoto.library;
 
 public class Book {
 
-
     private int id;
     private String title;
-    private String autor;
+    private String author;
     private int year;
-    private boolean availability;
+    private boolean available;
 
     
     
