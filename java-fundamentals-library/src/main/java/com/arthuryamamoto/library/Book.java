@@ -2,12 +2,15 @@ package com.arthuryamamoto.library;
 
 public class Book {
 
+    // attributes
     private int id;
     private String title;
     private String author;
     private int year;
     private boolean available;
 
+
+    // constructor
     public Book(int id, String title, String author, int year) {
         this.id = id;
         this.title = title;
@@ -16,7 +19,7 @@ public class Book {
         this.available = true;
     }
     
-    
+    // getters and setters
     public int getId() {
         return id;
     }
@@ -41,7 +44,7 @@ public class Book {
     public void setYear(int year) {
         this.year = year;
     }
-    public boolean getAvailable() {
+    public boolean isAvailable() {
         return available;
     }
     public void setAvailable(boolean available) {
@@ -49,7 +52,7 @@ public class Book {
     }
     
     
-    
+    // methods
     @Override
     public String toString() {
         return "Book [id=" + id + ", title=" + title + ", author=" + author + ", year=" + year + ", available="
