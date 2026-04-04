@@ -7,7 +7,15 @@ public class Book {
     private String author;
     private int year;
     private boolean available;
+
     
+    public Book(int id, String title, String author, int year, boolean available) {
+        this.id = id;
+        this.title = title;
+        this.author = author;
+        this.year = year;
+        this.available = available;
+    }
     public int getId() {
         return id;
     }
