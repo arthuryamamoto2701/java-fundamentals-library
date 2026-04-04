@@ -6,7 +6,7 @@ This project was created to practice core Java concepts through small and practi
 
 ## 🎯 Objective
 
-The goal of this repository is to improve my understanding of Java fundamentals by building simple applications and experimenting with different concepts.
+The goal of this repository is to improve my understanding of Java fundamentals by building a simple library management system. Through this project, I aim to model real-world concepts such as books, availability, and borrowing logic while applying object-oriented programming principles in practice.
 
 ---
 
