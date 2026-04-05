@@ -19,8 +19,11 @@ public class Library {
         // Control variable to keep the program running
         boolean stop = false;
 
-        // Auto-increment ID for each new book
+        // Auto-increment ID for each new book and declare variable
         int id_book = 1;
+
+        // Declare id
+        int id;
 
         // Main loop of the application
         do {
@@ -39,13 +42,12 @@ public class Library {
                 case 2:
                     menu.listBooks(books);
                     break;
-                // List all registered books
-                case 2:
-                    menu.listBooks(books);
-                    break;
-                // List all registered books
+
+                // Borrow books
                 case 3:
-                    menu.listBooks(books);
+                    System.out.println("Enter the ID of the book you want to borrow: ");
+                    id = scanner.nextInt();
+                    menu.borrowBook(books, id);
                     break;
                 // List all registered books
                 case 4:

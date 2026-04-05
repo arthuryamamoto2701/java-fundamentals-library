@@ -71,4 +71,41 @@ public class Menu {
 
         System.out.println();
     }
+
+    // Borrow a book
+    public void borrowBook(ArrayList<Book> books, int id) {
+
+        // Loop through each book in the list
+        for (Book book : books) {
+
+            // Check if the current book ID matches the requested ID
+            if (book.getId() == id) {
+
+                // Check if the book is available (default is true from constructor)
+                if (book.getAvailable()) {
+
+                    // Mark the book as borrowed (not available anymore)
+                    book.setAvailable(false);
+
+                    System.out.println();
+                    System.out.println("Book borrowed successfully: " + book.getTitle());
+                    System.out.println();
+
+                } else {
+
+                    // Book exists but is already borrowed
+                    System.out.println();
+                    System.out.println("The Book is already borrowed!");
+                    System.out.println();
+                }
+
+                // Exit method after processing the book
+                return;
+            }
+        }
+
+        // If no book with the given ID was found
+        System.out.println();
+        System.out.println("Book with ID " + id + " not found.");
+    }
 }
