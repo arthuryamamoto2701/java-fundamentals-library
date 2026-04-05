@@ -55,9 +55,11 @@ public class Library {
                     id = scanner.nextInt();
                     menu.returnBook(books, id);
                     break;
-                // List all registered books
+                // Delete book
                 case 5:
-                    menu.listBooks(books);
+                    System.out.println("Enter the ID of the book you want to remove: ");
+                    id = scanner.nextInt();
+                    menu.removeBook(books, id);
                     break;
 
                 // Exit the application

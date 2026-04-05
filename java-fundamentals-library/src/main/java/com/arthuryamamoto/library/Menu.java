@@ -110,6 +110,8 @@ public class Menu {
         System.out.println();
     }
 
+
+    // Return a Book
     public void returnBook(ArrayList<Book> books, int id) {
 
         // Loop through each book in the list
@@ -142,6 +144,37 @@ public class Menu {
         }
 
         // If no book with the given ID was found in the list
+        System.out.println();
+        System.out.println("Book with ID " + id + " not found.");
+        System.out.println();
+    }
+
+
+
+
+    // Remove a Book
+    public void removeBook(ArrayList<Book> books, int id) {
+
+        // Loop through the list using index (needed because we will remove an item)
+        for (int i = 0; i < books.size(); i++) {
+
+            // Check if the current book ID matches the requested ID
+            if (books.get(i).getId() == id) {
+
+                // Show success message before removing the book
+                System.out.println();
+                System.out.println("Book removed successfully: " + books.get(i).getTitle());
+                System.out.println();
+
+                // Remove the book from the list
+                books.remove(i);
+
+                // Exit method after removing the book
+                return;
+            }
+        }
+
+        // If no book with the given ID was found
         System.out.println();
         System.out.println("Book with ID " + id + " not found.");
         System.out.println();
