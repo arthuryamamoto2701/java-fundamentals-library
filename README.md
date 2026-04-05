@@ -1,13 +1,13 @@
 ---
 
-☕ Java Fundamentals – Library Management System
+## ☕ Java Fundamentals – Library Management System
 
 This project was created to practice and strengthen core Java and Object-Oriented Programming (OOP) concepts through a simple console-based library management system.
 
 
 ---
 
-🎯 Objective
+## 🎯 Objective
 
 The goal of this project is to simulate a basic library system while applying fundamental OOP principles in a practical scenario.
 
@@ -18,7 +18,7 @@ It also reinforces good coding practices such as code organization, readability,
 
 ---
 
-🧠 Object-Oriented Programming Concepts Applied
+## 🧠 Object-Oriented Programming Concepts Applied
 
 This project was built using the following OOP principles:
 
@@ -32,7 +32,7 @@ Access to attributes is controlled through methods
 
 ---
 
-Abstraction
+## Abstraction
 
 Business operations are exposed through clear methods such as:
 
@@ -47,7 +47,7 @@ removeBook()
 
 ---
 
-Modularity / Separation of Concerns
+## Modularity / Separation of Concerns
 
 The application is structured into distinct responsibilities:
 
@@ -55,7 +55,7 @@ model → Book → Data model (entity)
 
 ui → Menu → Handles user interaction (input/output only)
 
-services → LibraryService → Application entry point and business logic + control flow
+services → LibraryService → Application entry point, control flow, and business logic
 
 
 This separation improves maintainability and aligns with real-world application design patterns.
@@ -63,7 +63,7 @@ This separation improves maintainability and aligns with real-world application 
 
 ---
 
-State Management
+## State Management
 
 Each book maintains its own state (available or borrowed)
 
@@ -73,7 +73,7 @@ State transitions are controlled through business rules
 
 ---
 
-📊 Business Rules
+## 📊 Business Rules
 
 The system enforces the following rules:
 
@@ -89,7 +89,7 @@ Operations on non-existent book IDs are validated and handled gracefully
 
 ---
 
-🛠️ Features
+## 🛠️ Features
 
 The system includes the following functionalities:
 
@@ -111,35 +111,35 @@ Console-based interactive menu
 
 ---
 
-🏗️ Project Structure
+## 🏗️ Project Structure
 
 Model → Book → Represents the entity (model)
 
 ui → Menu → Responsible for user input and output (UI layer)
 
-services → LibraryService → Main class containing program flow and business logic
+services → LibraryService → Application entry point, control flow, and business logic
 
 
 
 ---
 
-🛠️ Technologies Used
+## 🛠️ Technologies Used
 
-Java 17+
+- Java 17+
 
-Apache Maven (build and project structure management)
+- Apache Maven (build and project structure management)
 
-ArrayList (data structure)
+- ArrayList (data structure)
 
-Scanner (console input)
+- Scanner (console input)
 
-Visual Studio Code
+- Visual Studio Code
 
 
 
 ---
 
-🚀 Key Learning Outcomes
+## 🚀 Key Learning Outcomes
 
 Practical application of OOP principles
 
@@ -157,7 +157,7 @@ Proper resource handling (e.g., Scanner lifecycle)
 
 ---
 
-🔮 Future Improvements
+## 🔮 Future Improvements
 
 Introduce a dedicated service layer (Service pattern)
 
@@ -173,16 +173,16 @@ Refactor towards layered architecture (Controller / Service / Repository)
 
 ---
 
-👨‍💻 Author
+## 👨‍💻 Author
 
 Developed by Arthur Mitsuo Yamamoto
 
 
 ---
 
-📌 Notes
+## 📌 Notes
 
-This project is part of my Java learning journey and will continue evolving as I improve my skills.
+This project is part of my ongoing Java learning journey and will continue evolving as I improve my skills.
 
 
 ---
