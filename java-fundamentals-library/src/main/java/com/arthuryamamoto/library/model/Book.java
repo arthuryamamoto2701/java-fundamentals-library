@@ -1,4 +1,4 @@
-package com.arthuryamamoto.library;
+package com.arthuryamamoto.library.model;
 
 public class Book {
 

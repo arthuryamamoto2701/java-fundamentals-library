@@ -1,95 +1,188 @@
 ---
 
-# ☕ Java Fundamentals – Library Management System
+☕ Java Fundamentals – Library Management System
 
 This project was created to practice and strengthen core Java and Object-Oriented Programming (OOP) concepts through a simple console-based library management system.
 
+
 ---
 
-## 🎯 Objective
+🎯 Objective
 
 The goal of this project is to simulate a basic library system while applying fundamental OOP principles in a practical scenario.
 
 The system models real-world entities such as books and their availability, and implements core operations like adding, listing, borrowing, returning, and removing books.
 
-This project focuses on improving understanding of how to structure Java applications using clean code and separation of responsibilities.
+It also reinforces good coding practices such as code organization, readability, and separation of concerns, with a clearer distinction between user interaction and business logic.
+
 
 ---
 
-## 🧠 Object-Oriented Programming Concepts Applied
+🧠 Object-Oriented Programming Concepts Applied
 
 This project was built using the following OOP principles:
 
-* **Encapsulation**
+Encapsulation
 
-  * The `Book` class encapsulates all book-related data (id, title, author, year, availability)
-  * Getters and setters control access to private attributes
+The Book class encapsulates all book-related data (id, title, author, year, availability)
 
-* **Abstraction**
+Access to attributes is controlled through methods
 
-  * The system hides internal implementation details behind methods like `borrowBook()`, `returnBook()`, and `removeBook()`
 
-* **Modularity / Separation of Concerns**
-
-  * `Book` → data model (entity)
-  * `Menu` → user interaction and operations
-  * `Library` → application entry point and control flow
-
-* **State Management**
-
-  * Each book maintains its own state (`available` or borrowed)
 
 ---
 
-## 🛠️ Features
+Abstraction
+
+Business operations are exposed through clear methods such as:
+
+borrowBook()
+
+returnBook()
+
+removeBook()
+
+
+
+
+---
+
+Modularity / Separation of Concerns
+
+The application is structured into distinct responsibilities:
+
+model → Book → Data model (entity)
+
+ui → Menu → Handles user interaction (input/output only)
+
+services → LibraryService → Application entry point and business logic + control flow
+
+
+This separation improves maintainability and aligns with real-world application design patterns.
+
+
+---
+
+State Management
+
+Each book maintains its own state (available or borrowed)
+
+State transitions are controlled through business rules
+
+
+
+---
+
+📊 Business Rules
+
+The system enforces the following rules:
+
+A book can only be borrowed if it is available
+
+A borrowed book cannot be borrowed again until it is returned
+
+Returning a book restores its availability
+
+Operations on non-existent book IDs are validated and handled gracefully
+
+
+
+---
+
+🛠️ Features
 
 The system includes the following functionalities:
 
-* Add new books with auto-incremented ID
-* List all registered books
-* Borrow a book (changes availability status)
-* Return a borrowed book
-* Remove a book by ID
-* Input validation for non-existent books
-* Console-based menu navigation system
+Add new books with auto-incremented ID
+
+List all registered books
+
+Borrow a book (updates availability status)
+
+Return a borrowed book
+
+Remove a book by ID
+
+Validation for invalid or non-existent book IDs
+
+Console-based interactive menu
+
+
 
 ---
 
-## 🏗️ Project Structure
+🏗️ Project Structure
 
-* `Book` → Represents the entity (model)
-* `Menu` → Handles user input and operations
-* `Library` → Main class with program flow and menu loop
+Model → Book → Represents the entity (model)
 
----
+ui → Menu → Responsible for user input and output (UI layer)
 
-## 🛠️ Technologies Used
+services → LibraryService → Main class containing program flow and business logic
 
-* Java 17+
-* ArrayList (data structure)
-* Scanner (console input)
-* Visual Studio Code
+
 
 ---
 
-## 🚀 Key Learning Outcomes
+🛠️ Technologies Used
 
-* Practical application of OOP principles
-* Working with lists (`ArrayList`) in Java
-* Building console-based interactive applications
-* Structuring code into classes with clear responsibilities
-* Handling user input and program flow with menus and loops
+Java 17+
+
+Apache Maven (build and project structure management)
+
+ArrayList (data structure)
+
+Scanner (console input)
+
+Visual Studio Code
+
+
 
 ---
 
-## 👨‍💻 Author
+🚀 Key Learning Outcomes
 
-Developed by **Arthur Mitsuo Yamamoto**
+Practical application of OOP principles
+
+Working with collections (ArrayList) in Java
+
+Building interactive console-based applications
+
+Structuring code with clear separation between UI and logic
+
+Managing application flow with loops and user input
+
+Proper resource handling (e.g., Scanner lifecycle)
+
+
 
 ---
 
-## 📌 Notes
+🔮 Future Improvements
 
-This project is part of my Java learning journey.
+Introduce a dedicated service layer (Service pattern)
+
+Persist data using files or a database
+
+Implement search functionality (by title or author)
+
+Improve input validation and error handling
+
+Refactor towards layered architecture (Controller / Service / Repository)
+
+
+
+---
+
+👨‍💻 Author
+
+Developed by Arthur Mitsuo Yamamoto
+
+
+---
+
+📌 Notes
+
+This project is part of my Java learning journey and will continue evolving as I improve my skills.
+
 
 ---
