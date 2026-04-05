@@ -49,9 +49,11 @@ public class Library {
                     id = scanner.nextInt();
                     menu.borrowBook(books, id);
                     break;
-                // List all registered books
+                // Return book
                 case 4:
-                    menu.listBooks(books);
+                    System.out.println("Enter the ID of the book you want to return: ");
+                    id = scanner.nextInt();
+                    menu.returnBook(books, id);
                     break;
                 // List all registered books
                 case 5:

@@ -35,16 +35,6 @@ This repository may include:
 - Experiments with object-oriented design
 
 
----
-
-## 📈 Future Improvements
-
-- Add more complex features
-- Improve code structure and organization
-- Explore new Java concepts
-- Possibly evolve into a REST API using Spring Boot
-
----
 
 ## 👨‍💻 Author
 

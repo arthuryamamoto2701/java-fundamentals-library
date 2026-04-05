@@ -107,5 +107,43 @@ public class Menu {
         // If no book with the given ID was found
         System.out.println();
         System.out.println("Book with ID " + id + " not found.");
+        System.out.println();
+    }
+
+    public void returnBook(ArrayList<Book> books, int id) {
+
+        // Loop through each book in the list
+        for (Book book : books) {
+
+            // Check if the current book ID matches the requested ID
+            if (book.getId() == id) {
+
+                // If the book is currently borrowed (not available)
+                if (!book.getAvailable()) {
+
+                    // Mark the book as available again
+                    book.setAvailable(true);
+
+                    System.out.println();
+                    System.out.println("Book returned successfully: " + book.getTitle());
+                    System.out.println();
+
+                } else {
+
+                    // Book was not borrowed
+                    System.out.println();
+                    System.out.println("This book: " + book.getTitle() + " is not currently borrowed.");
+                    System.out.println();
+                }
+
+                // Exit method after processing
+                return;
+            }
+        }
+
+        // If no book with the given ID was found in the list
+        System.out.println();
+        System.out.println("Book with ID " + id + " not found.");
+        System.out.println();
     }
 }
