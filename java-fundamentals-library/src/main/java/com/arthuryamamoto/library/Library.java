@@ -4,38 +4,70 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Library {
-    
 
-public static void main(String[] args) {
-        
-    Scanner scanner = new Scanner(System.in);
+    public static void main(String[] args) {
 
-    ArrayList<Book> books = new ArrayList<>();
+        // Scanner used to read user input from console
+        Scanner scanner = new Scanner(System.in);
 
-    Menu menu = new Menu();
-    boolean stop = false;
-    int id_book = 1;
+        // List that stores all books registered in the system
+        ArrayList<Book> books = new ArrayList<>();
 
-    do{
-        int option = menu.getOption();
-        
-        switch (option) {
-            case 1:
-                books.add(menu.addBook(id_book));
-                id_book++;
-                break;
-            case 2:
-                menu.listBooks(books);
-            case 6:
-                stop = true;
-                System.out.println("Finishing....");
-                break;
-        
-            default:
-                break;
-        }
-    }while(!stop);
+        // Menu object responsible for handling user options
+        Menu menu = new Menu();
 
+        // Control variable to keep the program running
+        boolean stop = false;
+
+        // Auto-increment ID for each new book
+        int id_book = 1;
+
+        // Main loop of the application
+        do {
+            // Display menu and get user option
+            int option = menu.getOption();
+
+            switch (option) {
+
+                // Add a new book to the list
+                case 1:
+                    books.add(menu.addBook(id_book));
+                    id_book++; // increment book ID
+                    break;
+
+                // List all registered books
+                case 2:
+                    menu.listBooks(books);
+                    break;
+                // List all registered books
+                case 2:
+                    menu.listBooks(books);
+                    break;
+                // List all registered books
+                case 3:
+                    menu.listBooks(books);
+                    break;
+                // List all registered books
+                case 4:
+                    menu.listBooks(books);
+                    break;
+                // List all registered books
+                case 5:
+                    menu.listBooks(books);
+                    break;
+
+                // Exit the application
+                case 6:
+                    stop = true;
+                    System.out.println("Finishing....");
+                    break;
+
+                // Handle invalid options
+                default:
+                    System.out.println("Invalid option. Try again.");
+                    break;
+            }
+
+        } while (!stop);
     }
 }
-

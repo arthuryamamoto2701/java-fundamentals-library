@@ -44,7 +44,7 @@ public class Book {
     public void setYear(int year) {
         this.year = year;
     }
-    public boolean isAvailable() {
+    public boolean getAvailable() {
         return available;
     }
     public void setAvailable(boolean available) {
